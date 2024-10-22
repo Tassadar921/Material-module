@@ -1,5 +1,9 @@
 # Small Symfony material project
 
+Symfony 7.1.5, Php 8.3.6, PostgreSQL 16.4
+
+This project is a small project to manage materials. It is a simple project to show some Symfony features.
+
 ## Installation
 
 1. Clone the repository
