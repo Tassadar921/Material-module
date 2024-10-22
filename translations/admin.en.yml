@@ -1,0 +1,7 @@
+# Flashes
+flash.form.error: An error occurred while submitting the form.
+flash.form.edit.success: The entity has been successfully updated.
+flash.form.new.success: The entity has been successfully created.
+flash.form.delete.success: The entity has been successfully deleted.
+flash.decrement.success: The quantity has been successfully decremented.
+flash.increment.success: The quantity has been successfully incremented.

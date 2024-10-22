@@ -1,0 +1,56 @@
+{{ form_start(form) }}
+    <div class="form-container">
+        <div class="form-row">
+            <div class="form-label">
+                {{ form_label(form.name) }}
+            </div>
+            <div class="form-input">
+                {{ form_widget(form.name) }}
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-label">
+                {{ form_label(form.priceTaxFree) }}
+            </div>
+            <div class="form-input">
+                {{ form_widget(form.priceTaxFree) }}
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-label">
+                {{ form_label(form.vat) }}
+            </div>
+            <div class="form-input">
+                {{ form_widget(form.vat) }}
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-label">
+                {{ form_label(form.priceTaxIncluded) }}
+            </div>
+            <div class="form-input">
+                {{ form_widget(form.priceTaxIncluded) }}
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-label">
+                {{ form_label(form.quantity) }}
+            </div>
+            <div class="form-input">
+                {{ form_widget(form.quantity) }}
+            </div>
+        </div>
+
+        <div class="form-actions">
+            {% if editing %}
+                <a class="form-delete" href="{{ path('material_delete', {id: material.id}) }}">{{ 'common.delete'|trans }}</a>
+            {% endif %}
+            <a href="{{ path('material_index') }}">{{ 'common.back_to_list'|trans }}</a>
+            {{ form_row(form.save) }}
+        </div>
+    </div>
+{{ form_end(form) }}

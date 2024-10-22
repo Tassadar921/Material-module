@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ 'view.material.new.title'|trans }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ vite_entry_script_tags('material_edit') }}
+{% endblock %}
+
+{% block body %}
+    <h1>{{ 'view.material.new.title'|trans }}</h1>
+    {% include 'material/_form.html.twig' with {form, editing: false} only %}
+{% endblock %}

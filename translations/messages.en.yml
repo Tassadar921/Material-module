@@ -1,0 +1,32 @@
+# Common
+common.close: Close
+common.see: See
+common.edit: Edit
+common.actions: Actions
+common.name: Name
+common.save: Save
+common.new: New
+common.delete: Delete
+common.back_to_list: Back to list
+common.id: ID
+
+# Views
+
+### Material
+view.material.list.title: Material list
+view.material.list.heading: List of materials
+view.material.list.price_tax_free: Price tax-free
+view.material.list.price_tax_included: Price tax-included
+view.material.list.quantity: Quantity
+view.material.details.title: Material details
+view.material.new.title: New material
+view.material.edit.title: Edit material
+view.material.list.out_of_stock: Out of stock
+
+# Forms
+
+### Material
+material.price_tax_free: Price tax-free
+material.price_tax_included: Price tax-included
+material.vat: VAT rate
+material.quantity: Quantity

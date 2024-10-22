@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ 'view.material.list.title'|trans }}
+{% endblock %}
+
+{% block body %}
+    <h1>{{ 'view.material.list.title'|trans }}</h1>
+
+    <table id="materialTable">
+        <thead>
+        <tr>
+            <th>{{ 'common.name'|trans }}</th>
+            <th>{{ 'view.material.list.price_tax_free'|trans }}</th>
+            <th>{{ 'view.material.list.price_tax_included'|trans }}</th>
+            <th>{{ 'view.material.list.quantity'|trans }}</th>
+            <th>{{ 'common.actions'|trans }}</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div class="dt-actions">
+        <div class="dt-out-of-stock">
+            <label for="out-of-stock-input" id="out-of-stock-label">{{ 'view.material.list.out_of_stock'|trans }}</label>
+            <input type="checkbox" id="out-of-stock-input" name="outOfStock">
+        </div>
+        <a class="dt-add" href="{{ path('material_new') }}">{{ 'common.new'|trans }}</a>
+    </div>
+
+    <div id="materialModal" class="modal">
+        <div class="modal-content">
+            <button id="closeModal">&times;</button>
+            <h2 class="modal-title">{{ 'view.material.details.title'|trans }}</h2>
+            <div class="modal-body">
+                <p><strong>{{ 'common.id'|trans }} :</strong> <span id="materialId"></span></p>
+                <p><strong>{{ 'view.material.list.name'|trans }} :</strong> <span id="materialName"></span></p>
+                <p><strong>{{ 'view.material.list.price_tax_free'|trans }} :</strong> <span id="materialPriceHT"></span>
+                </p>
+                <p><strong>{{ 'view.material.list.price_tax_included'|trans }} :</strong> <span
+                            id="materialPriceTTC"></span></p>
+                <p><strong>{{ 'view.material.list.quantity'|trans }} :</strong> <span id="materialQuantity"></span></p>
+            </div>
+            <button id="closeButton">{{ 'common.close'|trans }}</button>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        const outOfStockCheckbox = document.getElementById('out-of-stock-input');
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const paramValue = urlParams.get('outOfStock');
+
+        if (paramValue === 'true') {
+            outOfStockCheckbox.checked = true;
+        }
+
+        outOfStockCheckbox.addEventListener('change', function () {
+            window.location="{{ path('material_index') }}?outOfStock=" + this.checked;
+        });
+    </script>
+{% endblock %}

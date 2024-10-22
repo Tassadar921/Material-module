@@ -1,0 +1,54 @@
+#materialModal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(31, 41, 55, 0.75);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#materialModal .modal-content {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    max-width: 28rem;
+    width: 100%;
+    padding: 1.5rem;
+    position: relative;
+}
+
+#closeModal {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    color: #4B5563;
+    transition: color 300ms;
+}
+
+#closeModal:hover {
+    color: #1F2937;
+}
+
+.modal-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.modal-body p {
+    margin-bottom: 1rem;
+}
+
+#closeButton {
+    margin-top: 1rem;
+    background-color: #374151;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 300ms ease;
+}
+
+#closeButton:hover {
+    background-color: #111827;
+}

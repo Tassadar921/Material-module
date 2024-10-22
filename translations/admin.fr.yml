@@ -1,0 +1,7 @@
+# Flashes
+flash.form.error: Une erreur est survenue lors de la soumission du formulaire.
+flash.form.edit.success: L'entité a été mise à jour avec succès.
+flash.form.new.success: L'entité a été créée avec succès.
+flash.form.delete.success: L'entité a été supprimée avec succès.
+flash.decrement.success: La quantité a été décrémentée avec succès.
+flash.increment.success: La quantité a été incrémentée avec succès.

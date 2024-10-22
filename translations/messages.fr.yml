@@ -1,0 +1,32 @@
+# Common
+common.close: Fermer
+common.see: Voir
+common.edit: Modifier
+common.actions: Actions
+common.name: Nom
+common.save: Sauvegarder
+common.new: Nouveau
+common.delete: Supprimer
+common.back_to_list: Retour à la liste
+common.id: ID
+
+# Views
+
+### Material
+view.material.list.title: Liste des matériaux
+view.material.list.heading: Liste des matériaux
+view.material.list.price_tax_free: Prix HT
+view.material.list.price_tax_included: Prix TTC
+view.material.list.quantity: Quantité
+view.material.details.title: Détails du matériel
+view.material.new.title: Nouveau matériel
+view.material.edit.title: Modifier le matériel
+view.material.list.out_of_stock: En rupture de stock
+
+# Forms
+
+### Material
+material.price_tax_free: Prix HT
+material.price_tax_included: Prix TTC
+material.vat: Taux de TVA
+material.quantity: Quantité
